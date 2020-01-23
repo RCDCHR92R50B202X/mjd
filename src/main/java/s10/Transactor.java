@@ -16,7 +16,7 @@ public class Transactor {
 
         System.out.print("[");
         while (rs.next()) {
-            System.out.print(String.format("(%d: %s %s)", //
+            System.out.print(String.format("(%d: %s %s)", // è una forma standard che passo al metodo format per fargli stampare coder_id, last name e first name
                     rs.getInt("coder_id"), //
                     rs.getString("first_name"), //
                     rs.getString("last_name")));
